@@ -63,8 +63,13 @@ const EditProfile = () => {
               <Form.Label column sm="3">
                 Profile Image:
               </Form.Label>
-              <Col sm="9">
-                <Form.Control type="file" />
+              <Col sm="9" className="d-flex align-items-center gap-3">
+                <img
+                  src="https://ui-avatars.com/api/?name=Unknown&background=cccccc&color=7c3aed&size=64"
+                  alt="Unknown profile"
+                  style={{ width: 64, height: 64, borderRadius: "50%", objectFit: "cover", border: "1px solid #eee" }}
+                />
+                <Form.Control type="file" style={{ maxWidth: 200 }} />
               </Col>
             </Form.Group>
 
